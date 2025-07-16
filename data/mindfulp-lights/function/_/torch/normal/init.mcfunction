@@ -5,6 +5,7 @@
 
 tag @s add mindfulp-lights.torch
 tag @s add mindfulp-lights.torch_normal
+tag @s add _
 
 # initial burn time / burnout
 scoreboard players operation @s mindfulp-lights.burn_time = *cache.torch.normal.burn_time _mindfulp-lights
@@ -20,3 +21,4 @@ scoreboard players operation @s mindfulp-lights.burn_time += *x _mindfulp-lights
 scoreboard players operation @s mindfulp-lights.burnout_threshold += *y _mindfulp-lights
 
 # set item
+item modify entity @s container.0 mindfulp-lights:torch/normal/burning

@@ -5,3 +5,4 @@
 
 tag @s add mindfulp-lights.torch
 tag @s add mindfulp-lights.torch_soul
+tag @s add _
