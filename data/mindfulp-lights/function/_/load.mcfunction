@@ -1,4 +1,4 @@
-#> mindfulp-lights:_/init
+#> mindfulp-lights:_/load
 #--------------------
 # @LOAD
 #--------------------

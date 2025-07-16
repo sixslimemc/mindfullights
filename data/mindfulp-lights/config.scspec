@@ -10,6 +10,7 @@
             }
             burn_time_per_additional: 1200
             extinguish_in_water: true
+            particles: 1
         }
         # Config for normal torches.
 
@@ -23,6 +24,7 @@
             }
             burn_time_per_additional: 4200
             extinguish_in_water: false
+            particles: 1
         }
         # Config for soul torches.
     }
@@ -52,7 +54,7 @@
 
 TorchConfig := {
     burn_time: int
-        # Total maximum lifetime (in ticks) of a torch.
+        # Total maximum lifetime (in ticks) of torches.
     
     burnout_percent: float
         # Percentage of 'torch.burn_time' at which torches start to "burn out" (fade in brightness).
@@ -71,6 +73,11 @@ TorchConfig := {
 
     extinguish_in_water: bool
         # Torches will extinguish when in a water block.
+
+    particles: 0 | 1 | 2
+        # 0: No particles emitted by torches.
+        # 1: Particles emitted with 'normal' parameter.
+        # 2: Particles emitted with 'force' parameter (always visible from all ranges).
 }
 
 CampfireConfig := {

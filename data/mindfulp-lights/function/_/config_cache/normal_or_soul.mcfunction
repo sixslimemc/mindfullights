@@ -23,3 +23,4 @@ $scoreboard players operation *cache.torch.$(type).brightness_range = *x _mindfu
 
 $execute store result score *cache.torch.$(type).time_per_add _mindfulp-lights run data get storage mindfulp-lights:config torch.$(type).burn_time_per_additional
 $execute store result score *cache.torch.$(type).extinguish_in_water _mindfulp-lights run data get storage mindfulp-lights:config torch.$(type).extinguish_in_water
+$execute store result score *cache.torch.$(type).particles _mindfulp-lights run data get storage mindfulp-lights:config torch.$(type).particles
