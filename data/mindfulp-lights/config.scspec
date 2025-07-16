@@ -1,0 +1,59 @@
+{
+    torch: {
+        normal: TorchConfig
+        = {
+            burn_time: 9600
+            burnout_percent 0.5f
+            brightness: {
+                max: 14
+                min: 5
+            }
+            burn_time_per_additional: 1200
+            extinguish_in_water: true
+        }
+        # Config for normal torches.
+
+        soul: TorchConfig
+        = {
+            burn_time: 24000
+            burnout_percent 0.5f
+            brightness: {
+                max: 10
+                min: 4
+            }
+            burn_time_per_additional: 4200
+            extinguish_in_water: false
+        }
+        # Config for soul torches.
+    }
+
+    campfire: {
+        start_unlit: bool
+            = true
+            # Campfire items will be modified to be unlit when placed.
+    }
+
+}
+
+TorchConfig := {
+    burn_time: int
+        # Total maximum lifetime (in ticks) of a torch.
+    
+    burnout_percent: float
+        # Percentage of 'torch.burn_time' at which torches start to "burn out" (fade in brightness).
+        # Once a torch is "burning out", it will no longer drop a stick when extinguished.
+    
+    brightness: {
+        max: int
+            # Light level (1-15) torches stay at while they are not yet burning out.
+        
+        min: int
+            # Light level (1-15) torches linearly approach (and reach just before fully burning out) once they are burning out.
+    }
+
+    burn_time_per_additional: int
+        # How long (in ticks) that each torch past the first adds to a stack-of-torch's 'burn_time'.
+
+    extinguish_in_water: bool
+        # Torches will extinguish when in a water block.
+}
