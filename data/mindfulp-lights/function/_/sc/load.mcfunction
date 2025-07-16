@@ -3,4 +3,4 @@
 # ENTRYPOINT :: LOAD
 #--------------------
 
-scoreboard objectives add _mindfulp-lights dummy
+function mindfulp-lights:_/load

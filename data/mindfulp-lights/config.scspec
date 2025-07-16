@@ -28,9 +28,17 @@
     }
 
     campfire: {
-        start_unlit: bool
-            = true
-            # Campfire items will be modified to be unlit when placed.
+        normal: CampfireConfig
+        = {
+            start_unlit: true
+        }
+        # Config for normal campfires.
+
+        soul: CampfireConfig
+        = {
+            start_unlit: true
+        }
+        # Config for soul campfires.
     }
 
 }
@@ -56,4 +64,9 @@ TorchConfig := {
 
     extinguish_in_water: bool
         # Torches will extinguish when in a water block.
+}
+
+CampfireConfig := {
+    start_unlit: bool
+        # Campfire item will be modified to be unlit when placed.
 }
