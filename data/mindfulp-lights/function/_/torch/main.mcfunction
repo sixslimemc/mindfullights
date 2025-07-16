@@ -3,9 +3,11 @@
 # _/tick AS [torch]
 #--------------------
 
+scoreboard players remove @s mindfulp-lights.burn_time 1
+
 
 
 execute as @s[tag=mindfulp-lights.torch_normal] run function mindfulp-lights:_/torch/normal/main
 execute as @s[tag=mindfulp-lights.torch_soul] run function mindfulp-lights:_/torch/soul/main
 
-scoreboard players remove @s mindfulp-lights.burn_time 1
+

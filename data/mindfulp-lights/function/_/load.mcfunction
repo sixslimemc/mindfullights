@@ -7,6 +7,10 @@ scoreboard objectives add _mindfulp-lights dummy
 scoreboard objectives add mindfulp-lights.burn_time dummy
 scoreboard objectives add mindfulp-lights.burnout_threshold dummy
 
+scoreboard objectives add _mindfulp-lights.max_light dummy
+scoreboard objectives add _mindfulp-lights.min_light dummy
+scoreboard objectives add _mindfulp-lights.light_range dummy
+
 # DEBUG
 scoreboard players reset *init _mindfulp-lights
 
