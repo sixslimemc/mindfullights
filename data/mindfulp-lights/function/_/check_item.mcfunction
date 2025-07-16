@@ -4,7 +4,7 @@
 #--------------------
 
 tag @s add _mindfulp-lights.checked
-
+say hi
 execute if items entity @s container.0 *[minecraft:custom_data~{_:true}] run return 0
 
 execute if score *cache.system.torch.reqthrow _mindfulp-lights matches 1 unless data entity @s Thrower run return 0
