@@ -18,6 +18,10 @@ scoreboard players operation *y _mindfulp-lights *= *cache.torch.normal.burnout_
 scoreboard players operation @s mindfulp-lights.burn_time += *x _mindfulp-lights
 scoreboard players operation @s mindfulp-lights.burnout_threshold += *y _mindfulp-lights
 
+# particles scores
+execute store result score @s _mindfulp-lights.particles_a run random value 2..10
+execute store result score @s _mindfulp-lights.particles_b run random value 2..10
+
 # set item
 item modify entity @s container.0 mindfulp-lights:torch/normal/burning
 

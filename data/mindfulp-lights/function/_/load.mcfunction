@@ -15,6 +15,10 @@ scoreboard objectives add mindfulp-lights.light_level dummy
 scoreboard objectives add _mindfulp-lights.max_light dummy
 scoreboard objectives add _mindfulp-lights.min_light dummy
 scoreboard objectives add _mindfulp-lights.light_range dummy
+scoreboard objectives add _mindfulp-lights.particles_a dummy
+scoreboard objectives add _mindfulp-lights.particles_b dummy
+
+scoreboard players set *2 _mindfulp-lights 2
 
 # DEBUG
 scoreboard players reset *init _mindfulp-lights
