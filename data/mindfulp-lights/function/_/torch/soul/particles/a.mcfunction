@@ -13,4 +13,4 @@ scoreboard players operation *x _mindfulp-lights /= *2 _mindfulp-lights
 
 execute if score @s mindfulp-lights.burn_time > *x _mindfulp-lights store result score @s _mindfulp-lights.particles_a run return run random value 60..80
 
-execute store result score @s _mindfulp-lights.particles_a run random value 100..140
+execute store result score @s _mindfulp-lights.particles_a run random value 120..180
