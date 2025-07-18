@@ -7,5 +7,6 @@
 scoreboard players operation *var.torch.light_range _mindfulp-lights = *cache.torch.normal.brightness_range _mindfulp-lights
 scoreboard players operation *var.torch.max_light _mindfulp-lights = *cache.torch.normal.max_brightness _mindfulp-lights
 scoreboard players operation *var.torch.min_light _mindfulp-lights = *cache.torch.normal.min_brightness _mindfulp-lights
+scoreboard players operation *var.torch.water_extinguish _mindfulp-lights = *cache.torch.normal.extinguish_in_water _mindfulp-lights
 
 execute if score *cache.torch.normal.particles _mindfulp-lights matches 1.. run function mindfulp-lights:_/torch/normal/particles/main

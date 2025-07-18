@@ -24,7 +24,7 @@
         "mode":"replace_all",
 		"lore": [
 			{
-				"text": "Salvagable.",
+				"text": "(Salvagable)",
 				"color": "dark_gray",
 				"italic": false
 			}
