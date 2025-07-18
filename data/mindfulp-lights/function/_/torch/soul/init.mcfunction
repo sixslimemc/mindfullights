@@ -5,7 +5,25 @@
 
 tag @s add mindfulp-lights.torch_soul
 
-scoreboard players operation @s _mindfulp-lights.light_range = *cache.torch.soul.brightness_range _mindfulp-lights
-scoreboard players operation @s _mindfulp-lights.max_light = *cache.torch.soul.max_brightness _mindfulp-lights
-scoreboard players operation @s _mindfulp-lights.min_light = *cache.torch.soul.min_brightness _mindfulp-lights
+# initial burn time / burnout
+scoreboard players operation @s mindfulp-lights.burn_time = *cache.torch.soul.burn_time _mindfulp-lights
+scoreboard players operation @s mindfulp-lights.burnout_threshold = *cache.torch.soul.burnout_threshold _mindfulp-lights
+
+# additional burn time / burnout
+execute store result score *x _mindfulp-lights run data get entity @s Item.count
+scoreboard players remove *x _mindfulp-lights 1
+scoreboard players operation *y _mindfulp-lights = *x _mindfulp-lights
+scoreboard players operation *x _mindfulp-lights *= *cache.torch.soul.time_per_add _mindfulp-lights
+scoreboard players operation *y _mindfulp-lights *= *cache.torch.soul.burnout_per_add _mindfulp-lights
+scoreboard players operation @s mindfulp-lights.burn_time += *x _mindfulp-lights
+scoreboard players operation @s mindfulp-lights.burnout_threshold += *y _mindfulp-lights
+
+# particles scores
+execute store result score @s _mindfulp-lights.particles_a run random value 2..50
+execute store result score @s _mindfulp-lights.particles_b run random value 1..100
+
+# set item
+item modify entity @s container.0 mindfulp-lights:torch/soul/burning
+
 function mindfulp-lights:_/torch/init
+

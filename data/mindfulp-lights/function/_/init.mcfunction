@@ -11,4 +11,4 @@ data modify storage mindfulp-lights:config campfire.soul set value {start_unlit:
 
 data modify storage mindfulp-lights:config system.torch.require_player_thrown set value true
 
-data modify storage mindfulp-lights:config torch.normal set value {burn_time:500, burnout_percent:0.5f, brightness:{min:5, max:14}, burn_time_per_additional:50, extinguish_in_water:true, particles:1}
+# data modify storage mindfulp-lights:config torch.normal set value {burn_time:500, burnout_percent:0.5f, brightness:{min:5, max:14}, burn_time_per_additional:50, extinguish_in_water:true, particles:1}
