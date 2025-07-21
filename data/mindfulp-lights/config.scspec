@@ -42,14 +42,6 @@
         }
         # Config for soul campfires.
     }
-
-    system: {
-        torch: {
-            require_player_thrown: bool
-                = true
-                # Torches not explicitly dropped/thrown by a player will act as regular items.
-        }
-    }
 }
 
 TorchConfig := {
