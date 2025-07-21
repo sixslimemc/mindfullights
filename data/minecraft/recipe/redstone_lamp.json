@@ -1,0 +1,20 @@
+{
+	"type": "minecraft:crafting_shaped",
+	"category": "redstone",
+	"key": {
+		"I": "minecraft:iron_ingot",
+		"G": "minecraft:glass",
+		"L": "minecraft:lantern",
+		"D": "minecraft:glowstone_dust",
+		"R": "minecraft:redstone"
+	},
+	"pattern": [
+		" I ",
+		"GLG",
+		"DRD"
+	],
+	"result": {
+		"count": 1,
+		"id": "minecraft:redstone_lamp"
+	}
+}
