@@ -1,7 +1,7 @@
 {
-	"type": "minecraft:campfire_cooking",
-	"group": "torch",
+	"type": "minecraft:smelting",
 	"category": "misc",
+	"group":"torch",
 	"ingredient": "minecraft:stick",
 	"result": {
 		"id": "minecraft:torch"

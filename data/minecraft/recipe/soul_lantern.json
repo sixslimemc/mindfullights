@@ -1,0 +1,18 @@
+{
+	"type": "minecraft:crafting_shaped",
+	"category": "misc",
+	"key": {
+		"I": "minecraft:copper_ingot",
+		"T": "minecraft:soul_torch",
+		"R": "minecraft:redstone"
+	},
+	"pattern": [
+		" I ",
+		"ITI",
+		" R "
+	],
+	"result": {
+		"count": 1,
+		"id": "minecraft:lantern"
+	}
+}
