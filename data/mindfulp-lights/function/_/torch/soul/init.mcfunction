@@ -23,7 +23,7 @@ execute store result score @s _mindfulp-lights.particles_a run random value 2..5
 execute store result score @s _mindfulp-lights.particles_b run random value 1..100
 
 # set item
-item modify entity @s container.0 mindfulp-lights:torch/soul/burning
+data merge entity @s {Item:{components:{"minecraft:custom_data":{_:true, __:true, mindfulp-lights:{torch:{type:"soul", burnt:false}}}, "minecraft:item_name":"Burning Soul Torch", "minecraft:rarity":"uncommon"}}}
 
 function mindfulp-lights:_/torch/init
 
