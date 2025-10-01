@@ -27,6 +27,21 @@
             particles: 1
         }
         # Config for soul torches.
+
+        copper: TorchConfig
+        = {
+            burn_time: 10800
+            burnout_percent 1.0f
+            brightness: {
+                max: 14
+                min: 1
+            }
+            burn_time_per_additional: 1320
+            extinguish_in_water: true
+            particles: 1
+        }
+        # Config for copper torches.
+
     }
 
     campfire: {

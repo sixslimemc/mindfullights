@@ -1,4 +1,4 @@
-#> mindfullights:_/config_cache/normal_or_soul
+#> mindfullights:_/config_cache/dynamic
 #--------------------
 # ./do
 #--------------------
