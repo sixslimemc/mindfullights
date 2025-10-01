@@ -3,16 +3,17 @@
 	"category": "misc",
 	"key": {
 		"I": "minecraft:iron_ingot",
+		"N": "minecraft:iron_nugget",
 		"T": "minecraft:soul_torch",
 		"R": "minecraft:redstone"
 	},
 	"pattern": [
-		" I ",
-		"ITI",
-		" R "
+		"NIN",
+		"NTN",
+		"NRN"
 	],
 	"result": {
 		"count": 1,
-		"id": "minecraft:lantern"
+		"id": "minecraft:soul_lantern"
 	}
 }
