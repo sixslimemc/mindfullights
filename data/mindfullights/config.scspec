@@ -30,13 +30,13 @@
 
         copper: TorchConfig
         = {
-            burn_time: 10800
+            burn_time: 12000
             burnout_percent 1.0f
             brightness: {
                 max: 14
                 min: 1
             }
-            burn_time_per_additional: 1320
+            burn_time_per_additional: 1360
             extinguish_in_water: true
             particles: 1
         }
