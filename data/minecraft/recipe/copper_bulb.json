@@ -4,13 +4,14 @@
 	"key": {
 		"I": "minecraft:copper_ingot",
 		"R": "minecraft:redstone",
-		"T": "minecraft:copper_torch",
+		"T": "minecraft:redstone_torch",
+		"G": "minecraft:glowstone_dust",
 		"O": "minecraft:glass"
 	},
 	"pattern": [
 		"IOI",
 		"RTR",
-		"IRI"
+		"IGI"
 	],
 	"result": {
 		"count": 1,
