@@ -2,7 +2,7 @@
 	"type": "minecraft:crafting_shaped",
 	"category": "misc",
 	"key": {
-		"I": "minecraft:copper_ingot",
+		"I": "minecraft:iron_ingot",
 		"T": "minecraft:soul_torch",
 		"R": "minecraft:redstone"
 	},

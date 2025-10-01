@@ -2,14 +2,15 @@
 	"type": "minecraft:crafting_shaped",
 	"category": "redstone",
 	"key": {
-		"C": "minecraft:copper_ingot",
+		"I": "minecraft:iron_nugget",
+		"O": "minecraft:glass",
 		"T": "minecraft:redstone_torch",
 		"G": "minecraft:glowstone_dust"
 	},
 	"pattern": [
-		" C ",
-		"CTC",
-		" G "
+		"IOI",
+		"ITI",
+		"IGI"
 	],
 	"result": {
 		"count": 1,
