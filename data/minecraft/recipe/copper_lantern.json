@@ -5,7 +5,6 @@
 		"I": "minecraft:copper_ingot",
 		"N": "minecraft:copper_nugget",
 		"T": [
-			"minecraft:torch",
 			"minecraft:copper_torch"
 		],
 		"R": "minecraft:redstone"
