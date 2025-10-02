@@ -3,16 +3,15 @@
 	"category": "misc",
 	"key": {
 		"I": "minecraft:copper_ingot",
-		"N": "minecraft:copper_nugget",
 		"T": [
-			"minecraft:copper_torch"
+			"minecraft:torch"
 		],
 		"R": "minecraft:redstone"
 	},
 	"pattern": [
-		"NIN",
-		"NTN",
-		"NRN"
+		" I ",
+		"ITI",
+		" R "
 	],
 	"result": {
 		"count": 1,
